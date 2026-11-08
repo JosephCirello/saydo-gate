@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+*.key
+results/episodes_local_*.jsonl
+media/build/
