@@ -107,6 +107,13 @@ def run_episode(scn: dict, model: str, rep: int = 0, backend: str | None = None,
                     args = json.loads(tc.function.arguments or "{}")
                 except json.JSONDecodeError:
                     args = {"_raw": tc.function.arguments}
+                # words also live inside tool arguments: a finish report, an escalation, an email body
+                if name in ("finish", "escalate", "send_email", "write_file"):
+                    spoken = " ".join(str(args.get(k, "")) for k in ("summary", "message", "body", "subject", "content"))
+                    said = gate.note_text(spoken)
+                    if said:
+                        transcript.append({"role": "assistant_in_tool", "tool": name, "text": spoken[:2000], "said": said})
+                        emit({"type": "say", "text": f"[in {name}] " + spoken[:600], "said": said})
                 verdict = gate.check(name, args)
                 if verdict["allow"]:
                     result = box.call(name, args)
