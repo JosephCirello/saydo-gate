@@ -7,3 +7,10 @@ results/episodes_local_*.jsonl
 media/build/
 uvicorn_local.log
 results_local/
+media/video/tts/
+media/video/segments/
+media/video/slides/
+media/video/slides_deck/
+media/video/*.log
+media/video/*.mp4
+media/video/plan.json

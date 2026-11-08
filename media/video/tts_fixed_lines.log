@@ -1,9 +1,0 @@
-line 01: 40 words, 79,488 bytes
-line 02: 58 words, 120,528 bytes
-line 03: 53 words, 131,616 bytes
-line 04: 63 words, 129,888 bytes
-retry 8 Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001972521D8B0> [The specified network name is no longer available]
-retry 8 Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001972521D8B0> [The specified network name is no longer available]
-retry 8 Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001972521D8B0> [The specified network name is no longer available]
-line 08: 57 words, 126,144 bytes
-line 09: 47 words, 110,160 bytes
