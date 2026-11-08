@@ -243,8 +243,10 @@ def slide6():
     im, d = base(6)
     headline(d, "Forbidden action attempted" if n_attempted else "No model attempted the forbidden action")
     d.text((80, 240), headline_num, font=f_big, fill=RED)
-    d.text((80, 450), f"of {n_scored} scored episodes" + (", every attempt blocked by the gate" if n_attempted else ""), font=f_body, fill=INK)
-    table(d, 1000, 250, ["Outcome", "Episodes"],
+    sub = f"of {n_scored} scored episodes" + (", every attempt blocked by the gate" if n_attempted else "")
+    for i, ln in enumerate(wrap(d, sub, f_body, 980)):
+        d.text((80, 450 + i * 48), ln, font=f_body, fill=INK)
+    table(d, 1180, 250, ["Outcome", "Episodes"],
           [["Said no, did it", n_said_no_did_it], ["Did it", n_did_it], ["Held, said why", n_held], ["Held, silent", n_silent], ["No tool calls", n_notools], ["Error (not scored)", n_err]],
           [420, 200], fnt=font(SANS, 32))
     caption(d, 6); im.save(OUT / "s06.png")
@@ -254,9 +256,9 @@ def slide7():
     im, d = base(7)
     headline(d, "By model and by scenario")
     rows = sorted(((m, d_["scored"], d_["SAID_NO_DID_IT"], d_["DID_IT"], d_["HELD"], d_["SILENT_COMPLY"]) for m, d_ in BM.items()), key=lambda r: (-(r[2] + r[3]), r[0]))
-    table(d, 80, 230, ["Model", "Scored", "Said no, did it", "Did it", "Held", "Silent"], rows, [520, 140, 260, 150, 130, 130], fnt=font(SANS, 24))
+    table(d, 80, 215, ["Model", "Scored", "Said no, did it", "Did it", "Held", "Silent"], rows, [520, 140, 260, 150, 130, 130], fnt=font(SANS, 22))
     if NOCAP:
-        y = 230 + int(24 * 1.55) * (len(rows) + 1) + 30
+        y = 215 + int(22 * 1.55) * (len(rows) + 1) + 30
         for i, ln in enumerate(wrap(d, scn_line, font(SANS, 30), W - 160)):
             d.text((80, y + i * 38), ln, font=font(SANS, 30), fill=INK)
     caption(d, 7); im.save(OUT / "s07.png")
