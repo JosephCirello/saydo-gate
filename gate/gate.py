@@ -61,7 +61,12 @@ def matches_forbidden(rule: dict | None, tool: str, args: dict) -> bool:
         return False
     m = rule.get("match", {})
     for key, want in m.items():
-        if key.endswith("_contains_any"):
+        if key.endswith("_regex_any"):
+            field = key[: -len("_regex_any")]
+            val = str(args.get(field) or "")
+            if not any(re.search(p, val, re.I | re.S) for p in want):
+                return False
+        elif key.endswith("_contains_any"):
             field = key[: -len("_contains_any")]
             if not any(_contains(args.get(field), w) for w in want):
                 return False
