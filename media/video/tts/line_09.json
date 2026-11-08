@@ -1,0 +1,242 @@
+{
+ "line": 9,
+ "spoken": "The gate is the product: an agent that executes safely is a product, an agent that only chats is a demo. The code, the scenarios and every episode record are public at github dot com, slash Joseph Cirello, slash saydo gate. Joseph Cirello, po TEST us AI.",
+ "caption": "The gate is the product: an agent that executes safely is a product, an agent that only chats is a demo. The code, the scenarios and every episode record are public at github dot com, slash Joseph Cirello, slash saydo gate. Joseph Cirello, Potestas AI.",
+ "words": [
+  {
+   "word": "The",
+   "start": 0.104166,
+   "end": 0.208332
+  },
+  {
+   "word": "gate",
+   "start": 0.221375,
+   "end": 0.533875
+  },
+  {
+   "word": "is",
+   "start": 0.638041,
+   "end": 0.742207
+  },
+  {
+   "word": "the",
+   "start": 0.755208,
+   "end": 0.846374
+  },
+  {
+   "word": "product",
+   "start": 0.859375,
+   "end": 1.367208
+  },
+  {
+   "word": "an",
+   "start": 1.692708,
+   "end": 1.822916
+  },
+  {
+   "word": "agent",
+   "start": 1.835958,
+   "end": 2.187541
+  },
+  {
+   "word": "that",
+   "start": 2.200541,
+   "end": 2.369832
+  },
+  {
+   "word": "executes",
+   "start": 2.382833,
+   "end": 2.955749
+  },
+  {
+   "word": "safely",
+   "start": 2.96875,
+   "end": 3.528666
+  },
+  {
+   "word": "is",
+   "start": 3.541666,
+   "end": 3.645832
+  },
+  {
+   "word": "a",
+   "start": 3.658875,
+   "end": 3.710958
+  },
+  {
+   "word": "product",
+   "start": 3.723958,
+   "end": 4.270833
+  },
+  {
+   "word": "an",
+   "start": 4.583333,
+   "end": 4.713541
+  },
+  {
+   "word": "agent",
+   "start": 4.726583,
+   "end": 5.078166
+  },
+  {
+   "word": "that",
+   "start": 5.091166,
+   "end": 5.247416
+  },
+  {
+   "word": "only",
+   "start": 5.260416,
+   "end": 5.559916
+  },
+  {
+   "word": "chats",
+   "start": 5.572916,
+   "end": 6.028666
+  },
+  {
+   "word": "is",
+   "start": 6.08075,
+   "end": 6.210958
+  },
+  {
+   "word": "a",
+   "start": 6.223958,
+   "end": 6.289083
+  },
+  {
+   "word": "demo",
+   "start": 6.302083,
+   "end": 6.705749
+  },
+  {
+   "word": "The",
+   "start": 7.148458,
+   "end": 7.213583
+  },
+  {
+   "word": "code",
+   "start": 7.226583,
+   "end": 7.695333
+  },
+  {
+   "word": "the",
+   "start": 7.942708,
+   "end": 8.020833
+  },
+  {
+   "word": "scenarios",
+   "start": 8.033875,
+   "end": 8.776083
+  },
+  {
+   "word": "and",
+   "start": 8.789083,
+   "end": 9.010458
+  },
+  {
+   "word": "every",
+   "start": 9.101583,
+   "end": 9.427124
+  },
+  {
+   "word": "episode",
+   "start": 9.440125,
+   "end": 9.947958
+  },
+  {
+   "word": "record",
+   "start": 9.960958,
+   "end": 10.312541
+  },
+  {
+   "word": "are",
+   "start": 10.325541,
+   "end": 10.442749
+  },
+  {
+   "word": "public",
+   "start": 10.45575,
+   "end": 10.9115
+  },
+  {
+   "word": "at",
+   "start": 10.989583,
+   "end": 11.145833
+  },
+  {
+   "word": "github",
+   "start": 11.158875,
+   "end": 11.575541
+  },
+  {
+   "word": "dot",
+   "start": 11.588541,
+   "end": 11.809916
+  },
+  {
+   "word": "com",
+   "start": 11.822916,
+   "end": 12.265624
+  },
+  {
+   "word": "slash",
+   "start": 12.65625,
+   "end": 13.059916
+  },
+  {
+   "word": "Joseph",
+   "start": 13.072916,
+   "end": 13.476582
+  },
+  {
+   "word": "Cirello",
+   "start": 13.489583,
+   "end": 14.036458
+  },
+  {
+   "word": "slash",
+   "start": 14.335958,
+   "end": 14.700541
+  },
+  {
+   "word": "saydo",
+   "start": 14.713541,
+   "end": 15.052082
+  },
+  {
+   "word": "gate",
+   "start": 15.065125,
+   "end": 15.403666
+  },
+  {
+   "word": "Joseph",
+   "start": 15.833333,
+   "end": 16.223958
+  },
+  {
+   "word": "Cirello",
+   "start": 16.237,
+   "end": 16.783875
+  },
+  {
+   "word": "po",
+   "start": 17.005208,
+   "end": 17.122416
+  },
+  {
+   "word": "TEST",
+   "start": 17.135416,
+   "end": 17.460957
+  },
+  {
+   "word": "us",
+   "start": 17.473958,
+   "end": 17.617208
+  },
+  {
+   "word": "AI",
+   "start": 17.630208,
+   "end": 17.968749
+  }
+ ]
+}

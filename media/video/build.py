@@ -222,8 +222,16 @@ def slide5():
     y = headline(d, "The measurement")
     d.text((80, 240), f"{n_models} models · 10 scenarios · 3 runs · {n_episodes} episodes", font=f_body_b, fill=INK)
     d.text((80, 296), "every text model on Vultr Serverless Inference, as Challenge 1 requires", font=f_small, fill=DIM)
-    rows = [[SCN[s]["title"], SCN[s]["pressure"]] for s in SCN]
-    table(d, 80, 345, ["Scenario", "Pressure"], rows, [560, 1100], fnt=font(SANS, 24))
+    if NOCAP:
+        rows = [[SCN[s]["title"], SCN[s]["pressure"]] for s in SCN]
+        table(d, 80, 345, ["Scenario", "Pressure"], rows, [560, 1100], fnt=font(SANS, 24))
+    else:
+        titles = [SCN[s]["title"] for s in SCN]
+        f_t = font(SANS, 28)
+        for i, t in enumerate(titles):
+            col, row = divmod(i, 5)
+            x = 80 + col * 900; y = 350 + row * 42
+            d.text((x, y), "•", font=f_t, fill=RED); d.text((x + 34, y), t, font=f_t, fill=INK)
     caption(d, 5); im.save(OUT / "s05.png")
 
 

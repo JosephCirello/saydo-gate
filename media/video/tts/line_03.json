@@ -1,0 +1,272 @@
+{
+ "line": 3,
+ "spoken": "So we built the gate. The agent gets a task, a stated company policy, and sixteen working tools. Every tool call runs inside a fresh Docker container on Vultr: no network, memory and CPU caps, a process limit, all capabilities dropped, destroyed after the episode. The model's API key never enters the box.",
+ "caption": "So we built the gate. The agent gets a task, a stated company policy, and sixteen working tools. Every tool call runs inside a fresh Docker container on Vultr: no network, memory and CPU caps, a process limit, all capabilities dropped, destroyed after the episode. The model's API key never enters the box.",
+ "words": [
+  {
+   "word": "So",
+   "start": 0.104166,
+   "end": 0.234374
+  },
+  {
+   "word": "we",
+   "start": 0.247416,
+   "end": 0.364624
+  },
+  {
+   "word": "built",
+   "start": 0.377625,
+   "end": 0.585958
+  },
+  {
+   "word": "the",
+   "start": 0.598958,
+   "end": 0.677083
+  },
+  {
+   "word": "gate",
+   "start": 0.690125,
+   "end": 1.028666
+  },
+  {
+   "word": "The",
+   "start": 1.458333,
+   "end": 1.562499
+  },
+  {
+   "word": "agent",
+   "start": 1.575541,
+   "end": 1.979207
+  },
+  {
+   "word": "gets",
+   "start": 1.992208,
+   "end": 2.174499
+  },
+  {
+   "word": "a",
+   "start": 2.1875,
+   "end": 2.252625
+  },
+  {
+   "word": "task",
+   "start": 2.265625,
+   "end": 2.8125
+  },
+  {
+   "word": "a",
+   "start": 3.020833,
+   "end": 3.059916
+  },
+  {
+   "word": "stated",
+   "start": 3.072916,
+   "end": 3.450541
+  },
+  {
+   "word": "company",
+   "start": 3.463541,
+   "end": 3.815124
+  },
+  {
+   "word": "policy",
+   "start": 3.828125,
+   "end": 4.440125
+  },
+  {
+   "word": "and",
+   "start": 4.700541,
+   "end": 4.817749
+  },
+  {
+   "word": "sixteen",
+   "start": 4.83075,
+   "end": 5.351583
+  },
+  {
+   "word": "working",
+   "start": 5.364583,
+   "end": 5.690124
+  },
+  {
+   "word": "tools",
+   "start": 5.703125,
+   "end": 6.145833
+  },
+  {
+   "word": "Every",
+   "start": 6.575541,
+   "end": 6.835957
+  },
+  {
+   "word": "tool",
+   "start": 6.848958,
+   "end": 7.135416
+  },
+  {
+   "word": "call",
+   "start": 7.148458,
+   "end": 7.526083
+  },
+  {
+   "word": "runs",
+   "start": 7.539083,
+   "end": 7.838583
+  },
+  {
+   "word": "inside",
+   "start": 7.851583,
+   "end": 8.411499
+  },
+  {
+   "word": "a",
+   "start": 8.4245,
+   "end": 8.476583
+  },
+  {
+   "word": "fresh",
+   "start": 8.489583,
+   "end": 8.958333
+  },
+  {
+   "word": "Docker",
+   "start": 8.971375,
+   "end": 9.349
+  },
+  {
+   "word": "container",
+   "start": 9.362,
+   "end": 9.856791
+  },
+  {
+   "word": "on",
+   "start": 9.869791,
+   "end": 9.986999
+  },
+  {
+   "word": "Vultr",
+   "start": 10.0,
+   "end": 10.416666
+  },
+  {
+   "word": "no",
+   "start": 10.846375,
+   "end": 10.937541
+  },
+  {
+   "word": "network",
+   "start": 10.950541,
+   "end": 11.510457
+  },
+  {
+   "word": "memory",
+   "start": 11.783875,
+   "end": 12.33075
+  },
+  {
+   "word": "and",
+   "start": 12.395833,
+   "end": 12.486999
+  },
+  {
+   "word": "CPU",
+   "start": 12.5,
+   "end": 13.085958
+  },
+  {
+   "word": "caps",
+   "start": 13.098958,
+   "end": 13.658874
+  },
+  {
+   "word": "a",
+   "start": 13.867208,
+   "end": 13.906291
+  },
+  {
+   "word": "process",
+   "start": 13.919291,
+   "end": 14.401082
+  },
+  {
+   "word": "limit",
+   "start": 14.414083,
+   "end": 14.778666
+  },
+  {
+   "word": "all",
+   "start": 15.169291,
+   "end": 15.390666
+  },
+  {
+   "word": "capabilities",
+   "start": 15.403666,
+   "end": 16.145874
+  },
+  {
+   "word": "dropped",
+   "start": 16.158875,
+   "end": 16.640666
+  },
+  {
+   "word": "destroyed",
+   "start": 16.848958,
+   "end": 17.395833
+  },
+  {
+   "word": "after",
+   "start": 17.408875,
+   "end": 17.617208
+  },
+  {
+   "word": "the",
+   "start": 17.630208,
+   "end": 17.721374
+  },
+  {
+   "word": "episode",
+   "start": 17.734375,
+   "end": 18.307291
+  },
+  {
+   "word": "The",
+   "start": 18.75,
+   "end": 18.802083
+  },
+  {
+   "word": "model's",
+   "start": 18.815125,
+   "end": 19.231791
+  },
+  {
+   "word": "API",
+   "start": 19.244791,
+   "end": 19.804707
+  },
+  {
+   "word": "key",
+   "start": 20.0,
+   "end": 20.221375
+  },
+  {
+   "word": "never",
+   "start": 20.234375,
+   "end": 20.625
+  },
+  {
+   "word": "enters",
+   "start": 20.638041,
+   "end": 20.911499
+  },
+  {
+   "word": "the",
+   "start": 20.9245,
+   "end": 21.002625
+  },
+  {
+   "word": "box",
+   "start": 21.015625,
+   "end": 21.5495
+  }
+ ]
+}

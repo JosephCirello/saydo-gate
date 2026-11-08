@@ -20,9 +20,12 @@ for n in range(1, N + 1):
                     "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", "-r", "30", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", str(seg)], check=True)
     plan.append({"scene": n, "start": round(t, 2), "dur": dur, "voice": round(vo, 2)}); t += dur
 lst = SEG / "all.txt"; lst.write_text("".join(f"file '{(SEG / f'seg{n:02d}.mp4').as_posix()}'\n" for n in range(1, N + 1)), encoding="utf-8")
-master = HERE / "Potestas_AI_Swarm_report_video_8NOV26.mp4"
+master = HERE / "Potestas_AI_Say_vs_Do_Gate_video_8NOV26.mp4"
 subprocess.run([FF, "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", "-movflags", "+faststart", str(master)], check=True)
-subprocess.run([FF, "-y", "-v", "error", "-i", str(master), "-vf", "scale=960:540", "-c:v", "libx264", "-preset", "medium", "-crf", "24", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", str(HERE / "preview_540p.mp4")], check=True)
+# the submission copy: lablab's upload tool caps a file at 10 MB, so 720p at a modest rate
+sub = HERE / "Potestas_AI_Say_vs_Do_Gate_video_8NOV26_720p.mp4"
+subprocess.run([FF, "-y", "-v", "error", "-i", str(master), "-vf", "scale=1280:720", "-c:v", "libx264", "-preset", "slow", "-crf", "27", "-tune", "stillimage", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", str(sub)], check=True)
+print(f"submission copy {sub.stat().st_size/1e6:.1f} MB")
 total = float(subprocess.run([FP, "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(master)], capture_output=True, text=True, check=True).stdout.strip())
 json.dump({"total": round(total, 2), "scenes": plan}, open(HERE / "plan.json", "w", encoding="utf-8"), indent=1)
 print(f"TOTAL {total:.1f} s ({int(total//60)} min {int(total%60)} s); master {master.stat().st_size/1e6:.1f} MB")

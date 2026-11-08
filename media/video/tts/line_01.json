@@ -1,0 +1,207 @@
+{
+ "line": 1,
+ "spoken": "Say versus do. Three minutes on a containment layer for AI agents that reads what the model says and what it does, side by side. Built in one day for the Vultr Agent Rush Hackathon, from po TEST us AI.",
+ "caption": "Say versus do. Three minutes on a containment layer for AI agents that reads what the model says and what it does, side by side. Built in one day for the Vultr Agent Rush Hackathon, from Potestas AI.",
+ "words": [
+  {
+   "word": "Say",
+   "start": 0.117208,
+   "end": 0.299499
+  },
+  {
+   "word": "versus",
+   "start": 0.3125,
+   "end": 0.690125
+  },
+  {
+   "word": "do",
+   "start": 0.703125,
+   "end": 0.989583
+  },
+  {
+   "word": "Three",
+   "start": 1.471375,
+   "end": 1.640666
+  },
+  {
+   "word": "minutes",
+   "start": 1.653666,
+   "end": 1.953166
+  },
+  {
+   "word": "on",
+   "start": 1.966166,
+   "end": 2.096374
+  },
+  {
+   "word": "a",
+   "start": 2.109375,
+   "end": 2.161458
+  },
+  {
+   "word": "containment",
+   "start": 2.1745,
+   "end": 2.760458
+  },
+  {
+   "word": "layer",
+   "start": 2.773458,
+   "end": 3.072958
+  },
+  {
+   "word": "for",
+   "start": 3.085958,
+   "end": 3.320333
+  },
+  {
+   "word": "AI",
+   "start": 3.333333,
+   "end": 3.697916
+  },
+  {
+   "word": "agents",
+   "start": 3.710958,
+   "end": 4.140666
+  },
+  {
+   "word": "that",
+   "start": 4.153666,
+   "end": 4.361999
+  },
+  {
+   "word": "reads",
+   "start": 4.375,
+   "end": 4.661458
+  },
+  {
+   "word": "what",
+   "start": 4.6745,
+   "end": 4.791708
+  },
+  {
+   "word": "the",
+   "start": 4.804708,
+   "end": 4.869833
+  },
+  {
+   "word": "model",
+   "start": 4.882833,
+   "end": 5.234416
+  },
+  {
+   "word": "says",
+   "start": 5.247416,
+   "end": 5.742207
+  },
+  {
+   "word": "and",
+   "start": 5.963541,
+   "end": 6.093749
+  },
+  {
+   "word": "what",
+   "start": 6.106791,
+   "end": 6.223999
+  },
+  {
+   "word": "it",
+   "start": 6.237,
+   "end": 6.354208
+  },
+  {
+   "word": "does",
+   "start": 6.367208,
+   "end": 6.822958
+  },
+  {
+   "word": "side",
+   "start": 7.070333,
+   "end": 7.369833
+  },
+  {
+   "word": "by",
+   "start": 7.382833,
+   "end": 7.539083
+  },
+  {
+   "word": "side",
+   "start": 7.552083,
+   "end": 7.968749
+  },
+  {
+   "word": "Built",
+   "start": 8.411458,
+   "end": 8.632833
+  },
+  {
+   "word": "in",
+   "start": 8.645833,
+   "end": 8.789083
+  },
+  {
+   "word": "one",
+   "start": 8.802083,
+   "end": 8.997416
+  },
+  {
+   "word": "day",
+   "start": 9.010416,
+   "end": 9.270832
+  },
+  {
+   "word": "for",
+   "start": 9.283875,
+   "end": 9.414083
+  },
+  {
+   "word": "the",
+   "start": 9.427083,
+   "end": 9.505208
+  },
+  {
+   "word": "Vultr",
+   "start": 9.51825,
+   "end": 9.987
+  },
+  {
+   "word": "Agent",
+   "start": 10.091166,
+   "end": 10.442749
+  },
+  {
+   "word": "Rush",
+   "start": 10.45575,
+   "end": 10.716166
+  },
+  {
+   "word": "Hackathon",
+   "start": 10.729166,
+   "end": 11.380207
+  },
+  {
+   "word": "from",
+   "start": 11.653666,
+   "end": 11.796916
+  },
+  {
+   "word": "po",
+   "start": 11.809916,
+   "end": 11.966166
+  },
+  {
+   "word": "TEST",
+   "start": 11.979166,
+   "end": 12.317707
+  },
+  {
+   "word": "us",
+   "start": 12.33075,
+   "end": 12.474
+  },
+  {
+   "word": "AI",
+   "start": 12.487,
+   "end": 12.864625
+  }
+ ]
+}

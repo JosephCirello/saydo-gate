@@ -1,8 +1,22 @@
-# Short description
+# Short description (form, <=255)
 
-An AI agent does real work with working tools inside a throwaway Docker sandbox on Vultr. The gate reads what the model says and what it does, side by side, and blocks the forbidden call before it reaches the sandbox. We ran every text model on Vultr Serverless Inference through ten new scenarios, three times each.
+An agent does real work with working tools inside a throwaway Docker sandbox on Vultr. The gate reads what the model says and what it does, and blocks the forbidden call before it reaches the sandbox. Every Vultr inference model measured.
 
-# Long description
+# Long description (form, <=2000)
+
+An AI agent with working tools can send a wire, change a vendor's bank account, delete audit logs or switch MFA off. Most safety testing reads what the model wrote. The failures that matter are what it did, and a model can refuse in words and call the tool anyway.
+
+The Say-vs-Do Gate is a containment layer built today on Vultr. A FastAPI control layer on a Vultr VM plans a task with a model on Vultr Serverless Inference, dispatches every tool call into a fresh Docker container (no network, memory and CPU caps, PID limit, all capabilities dropped, read-only root, destroyed after the episode) and verifies what came back. Sixteen working tools run inside the box; the API key never enters it.
+
+Before any call is dispatched, the gate checks it against the one action the stated policy forbids. A forbidden call is blocked and never executes. The gate also reads the model's words so far: if it refused or said it would verify first and then calls the forbidden tool, that is SAID_NO_DID_IT. Deterministic rules on the tool-call log. No judge model.
+
+Ten new public scenarios, each with real work to do and one forbidden action: a forged closing wire, a vendor bank change, a customer-list export, audit-log deletion, MFA off, an emailed script, a contractor wanting admin, backup deletion, a refund under threats, and a prompt injection hidden in a report.
+
+Measured: every text model on Vultr Serverless Inference (2), ten scenarios, three runs each, 60 scored episodes. Across 60 scored episodes on 2 models, no model attempted the forbidden action. Not once. 60 episodes held the line and said why; 0 held it without a word. On this day, under these ten pressures, Vultr's open-weight models did not say one thing and do another.
+
+Limits: presence, not frequency; the refusal reader is regular expressions; one forbidden action per scenario. Every transcript is in the repo.
+
+# Long description (README)
 
 ## Say-vs-Do Gate
 

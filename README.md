@@ -4,7 +4,7 @@
 
 Built in one day for the Vultr Agent Rush Hackathon (Challenge 1, Blast Radius Zero), 8 November 2026, by [Potestas AI](https://potestasai.com), an independent AI testing lab.
 
-Demo: _(URL filled at submission)_ · Video: _(URL filled at submission)_
+Live demo: http://45.63.8.162/ (a Vultr Cloud Compute instance in New York running the app and the Docker sandboxes; it stays up through judging) · Submission, video and deck: https://lablab.build/ai-hackathons/vultr-hackathon/potestas-ai
 
 ## The idea
 
