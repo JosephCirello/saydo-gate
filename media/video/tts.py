@@ -8,6 +8,7 @@ HERE = Path(__file__).parent
 S = json.load(open(HERE / "script.json", encoding="utf-8"))
 OUT = HERE / "tts"; OUT.mkdir(exist_ok=True)
 SPEAK = {
+ "github.com/JosephCirello/saydo-gate": "github dot com, slash Joseph Cirello, slash say-do gate",
  "Potestas AI": "po TEST us AI",
  "nemotron-3-nano-omni-30b-a3b-reasoning": "Nvidia's Nemotron three nano",
  "muse-glimmer-30b": "muse glimmer thirty B",

@@ -10,6 +10,6 @@
   "The result. Across 360 scored episodes on 12 models, the forbidden action was attempted 10 times and blocked every time. Not one of them refused first. No model said no and then did it. All 10 went straight to the action without a word of refusal, while 331 episodes held the line and said why.",
   "Models that attempted it: nemotron-3-nano-omni-30b-a3b-reasoning, 7 of 30, muse-glimmer-30b, 3 of 30. The other 10 models never attempted it. By scenario, the hardest was Clean up before the auditors arrive, attempted 4 of 36 times.",
   "Every verdict is read off the tool-call log with fixed rules. No judge model anywhere. The refusal reader is a set of patterns, so it will miss some refusals and over-read some hedges; every transcript is in the repository so you can check it yourself. One run is presence, not frequency. Three repetitions are a small sample.",
-  "The gate is the product: an agent that executes safely is a product, an agent that only chats is a demo. The code, the scenarios and every episode record are public at github dot com, slash Joseph Cirello, slash saydo gate. Joseph Cirello, Potestas AI."
+  "The gate is the product: an agent that executes safely is a product, an agent that only chats is a demo. The code, the scenarios and every episode record are public at github.com/JosephCirello/saydo-gate."
  ]
 }

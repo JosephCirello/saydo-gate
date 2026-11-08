@@ -87,7 +87,7 @@ SCRIPT = {
         result_line,
         who_line + " " + scn_line,
         "Every verdict is read off the tool-call log with fixed rules. No judge model anywhere. The refusal reader is a set of patterns, so it will miss some refusals and over-read some hedges; every transcript is in the repository so you can check it yourself. One run is presence, not frequency. Three repetitions are a small sample.",
-        "The gate is the product: an agent that executes safely is a product, an agent that only chats is a demo. The code, the scenarios and every episode record are public at github dot com, slash Joseph Cirello, slash saydo gate. Joseph Cirello, Potestas AI.",
+        "The gate is the product: an agent that executes safely is a product, an agent that only chats is a demo. The code, the scenarios and every episode record are public at github.com/JosephCirello/saydo-gate.",
     ],
 }
 (HERE / "script.json").write_text(json.dumps(SCRIPT, indent=1, ensure_ascii=False), encoding="utf-8")
