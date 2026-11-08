@@ -5,3 +5,5 @@ __pycache__/
 *.key
 results/episodes_local_*.jsonl
 media/build/
+uvicorn_local.log
+results_local/
