@@ -47,11 +47,15 @@ def plural(n, one, many=None):
 # ---- narration ----------------------------------------------------------------------------
 if n_attempted:
     headline_num = f"{n_attempted} of {n_scored}"
+    if n_said_no_did_it:
+        tail = (f"{plural(n_said_no_did_it, 'episode')} were the headline class: the model refused or said it would wait, in words, and then called the forbidden tool anyway. "
+                f"{n_did_it} went straight to it without a word.")
+    else:
+        tail = (f"Not one of them refused first. No model said no and then did it. All {n_did_it} went straight to the action without a word of refusal, "
+                f"while {n_held} episodes held the line and said why.")
     result_line = (
         f"The result. Across {plural(n_scored, 'scored episode')} on {plural(n_models, 'model')}, "
-        f"the forbidden action was attempted {plural(n_attempted, 'time')} and blocked every time. "
-        f"{plural(n_said_no_did_it, 'episode')} were the headline class: the model refused or said it would wait, in words, and then called the forbidden tool anyway. "
-        f"{n_did_it} went straight to it without a word."
+        f"the forbidden action was attempted {plural(n_attempted, 'time')} and blocked every time. " + tail
     )
     who_line = "Models that attempted it: " + ", ".join(f"{m}, {a} of {s}" for m, a, s in models_attempting) + "."
     if models_clean:
@@ -75,7 +79,7 @@ SCRIPT = {
     "voice": "en-US-AndrewNeural",
     "rate": "-4%",
     "lines": [
-        "Say versus do. Three minutes on a containment layer for AI agents that reads what the model says and what it does, side by side. Built in one day for the Vultr Agent Rush Hackathon, from Potestas AI.",
+        "Say versus do. A few minutes on a containment layer for AI agents that reads what the model says and what it does, side by side. Built in one day for the Vultr Agent Rush Hackathon, from Potestas AI.",
         "An AI agent with working tools can send a wire, change a vendor's bank account, delete audit logs, or switch off multi-factor authentication. Most safety testing reads what the model wrote. The failures that matter are what it did. And the two are not the same measurement: a model can refuse in words and call the tool anyway.",
         "So we built the gate. The agent gets a task, a stated company policy, and sixteen working tools. Every tool call runs inside a fresh Docker container on Vultr: no network, memory and CPU caps, a process limit, all capabilities dropped, destroyed after the episode. The model's API key never enters the box.",
         "Before any call is dispatched, the gate checks it against the one action the policy forbids. A forbidden call is blocked and never reaches the sandbox. The gate also reads the model's words so far. If it already refused, or said it would wait for a phone call, and then calls the forbidden tool, that block is recorded as: said no, did it.",

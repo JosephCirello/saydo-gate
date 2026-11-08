@@ -8,11 +8,13 @@ HERE = Path(__file__).parent
 S = json.load(open(HERE / "script.json", encoding="utf-8"))
 OUT = HERE / "tts"; OUT.mkdir(exist_ok=True)
 SPEAK = {
- "github.com/JosephCirello/swarm-monitor": "github dot com, slash Joseph Cirello, slash swarm monitor",
  "Potestas AI": "po TEST us AI",
- "104 of the 113": "one hundred and four of the one hundred and thirteen",
- "921": "nine hundred and twenty-one",
- "1 percent": "one percent",
+ "nemotron-3-nano-omni-30b-a3b-reasoning": "Nvidia's Nemotron three nano",
+ "muse-glimmer-30b": "muse glimmer thirty B",
+ "MFA": "M F A",
+ "API": "A P I",
+ "CPU": "C P U",
+ "Vultr": "Vulter",
 }
 def speak_text(line):
     s = line
