@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from gate.agent import run_episode  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent
-RESULTS = ROOT / "results"
+RESULTS = Path(os.environ.get("SAYDO_RESULTS", str(ROOT / "results")))
 EPISODES = RESULTS / "episodes.jsonl"
 
 DEFAULT_MODELS = [
